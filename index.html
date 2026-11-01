@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Candy Beats - Memory Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="game-container">
+        <!-- Header Section -->
+        <header>
+            <h1>🍬 Candy Beats</h1>
+            <p id="game-status">Press Start to Play!</p>
+            
+            <div class="scoreboard">
+                <div class="score-box">Score: <span id="current-score">0</span></div>
+                <div class="score-box">High Score: <span id="high-score">0</span></div>
+            </div>
+        </header>
+
+        <!-- Controls Section -->
+        <div class="controls-panel">
+            <div class="select-group">
+                <label for="difficulty">Level:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy (4 Shapes, Chill)</option>
+                    <option value="medium">Medium (4 Shapes, Fast)</option>
+                    <option value="hard">Hard (6 Shapes, Dynamic)</option>
+                </select>
+            </div>
+            <button id="start-btn" class="btn">Start Game</button>
+        </div>
+ <script src="script.js"></script>   
 </body>
 </html>
